@@ -27,7 +27,8 @@ const stocks = () => {ApiConnector.getStocks((response) => {
     ratesBoard.fillTable(response.data)
  }
 })}
-setInterval(stocks(), 60000);
+stocks();
+setInterval(stocks, 60000);
 
 
 
